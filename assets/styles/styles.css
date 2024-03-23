@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+h1,
+h2 {
+  color: forestgreen;
+}
+header.navbar {
+  width: 100%;
+  max-width: 1200px;
+  padding-block: 1rem;
+  margin-inline: auto;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  z-index: 9999;
+}
+
+header.navbar .logo img {
+  width: 150px;
+}
+
+header.navbar .nav-list ul {
+  padding-left: 0;
+
+  display: flex;
+  justify-content: center;
+  gap: 4rem 2rem;
+}
+
+header.navbar .nav-list li {
+  list-style-type: none;
+}
+
+header.navbar .nav-list li a {
+  padding: 1rem 2rem;
+  border-radius: 999px;
+
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: black;
+
+  transition: all 0.2s ease-in-out;
+}
+
+header.navbar .nav-list li:hover a {
+  background-color: forestgreen;
+  color: white;
+}
+
+main {
+  flex: 1;
+
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+
+  display: flex;
+  align-items: center;
+}
+
+main .content .article {
+  flex: 1;
+
+  display: flex;
+}
+
+main .content .content-description {
+  flex: 1 1;
+}
+
+main .content .content-description .title .article {
+  margin-block: 1rem;
+
+  font-size: 3.5rem;
+}
+
+main .content .content-description p {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+
+main .content .content-image {
+  flex: 1;
+
+  display: flex;
+}
+
+main .content .content-image img {
+  width: 300px;
+  min-width: 250px;
+  margin: auto;
+}
+
+main .aside {
+  position: absolute;
+  inset-block: 0;
+  inset-inline-end: 0;
+}
+.aside-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.aside-content ul {
+  list-style-type: none;
+}
+
+td {
+  text-align: center;
+}
+
+.galeri {
+  object-fit: cover;
+  object-position: center;
+}
+
+footer {
+  text-align: center;
+}
+
+/* Medium devices (768px dan dibawahnya) */
+@media screen and (max-width: 768px) {
+  header .navbar {
+    flex-direction: column;
+  }
+
+  header .navbar .nav-list {
+    flex-wrap: wrap;
+    column-gap: 0rem;
+  }
+
+  main .content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  main content.content-image img {
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+}
