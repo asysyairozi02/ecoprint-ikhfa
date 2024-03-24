@@ -11,9 +11,11 @@ body {
 
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 h1,
-h2 {
+h2,
+h3 {
   color: forestgreen;
 }
 header.navbar {
@@ -71,7 +73,7 @@ main {
   padding: 2rem 4rem;
 
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 main .content .article {
@@ -126,43 +128,17 @@ main .aside {
 td {
   text-align: center;
 }
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
 
-.galeri {
-  object-fit: cover;
-  object-position: center;
+.galeri .galeri-images .galeri-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 footer {
   text-align: center;
-}
-
-/* Medium devices (768px dan dibawahnya) */
-@media screen and (max-width: 768px) {
-  header .navbar {
-    flex-direction: column;
-  }
-
-  header .navbar .nav-list {
-    flex-wrap: wrap;
-    column-gap: 0rem;
-  }
-
-  main .content {
-    flex-direction: column;
-    gap: 2rem;
-  }
-  main content.content-image img {
-    display: flex;
-    height: 300px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  footer {
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-    padding-left: 0;
-  }
 }
