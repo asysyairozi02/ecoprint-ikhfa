@@ -1,7 +1,5 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
@@ -141,4 +139,82 @@ h3 {
 
 footer {
   text-align: center;
+}
+
+@media screen and(max-width: 768px) {
+  header.navbar {
+    flex-direction: column;
+  }
+  header .navbar .nav-list ul {
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+  }
+}
+
+main .content {
+  flex-direction: column;
+  gap: 2rem;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+main .content .content-description .title {
+  font-size: 3rem;
+}
+
+main .content .content-description p {
+  font-size: 1rem;
+}
+
+main .content .content-image {
+  order: -1;
+}
+
+.galeri .galeri-images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media screen and(max-width: 320px) {
+  header.navbar {
+    flex-direction: column;
+  }
+  header .navbar .nav-list ul {
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+  }
+}
+
+main .content {
+  flex-direction: column;
+  gap: 2rem;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+main .content .content-description .title {
+  font-size: 3rem;
+}
+
+main .content .content-description p {
+  font-size: 1rem;
+}
+
+main .content .content-image {
+  order: -1;
+}
+
+.galeri .galeri-images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
